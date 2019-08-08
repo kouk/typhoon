@@ -134,4 +134,3 @@ variable "enable_aggregation" {
   type = string
   default = "false"
 }
-
