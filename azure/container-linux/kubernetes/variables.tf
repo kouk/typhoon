@@ -46,6 +46,12 @@ variable "worker_type" {
   description = "Machine type for workers (see `az vm list-skus --location centralus`)"
 }
 
+variable "worker_identity" {
+  description = "The type of Identity management to specify for the worker VMs. Options are None (default) or SystemAssigned"
+  type = string
+  default = "None"
+}
+
 variable "os_image" {
   type        = string
   default     = "coreos-stable"
