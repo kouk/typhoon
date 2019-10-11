@@ -54,3 +54,6 @@ output "backend_address_pool_id" {
   value       = azurerm_lb_backend_address_pool.worker.id
 }
 
+output "resource_group_id" {
+  value = azurerm_resource_group.cluster.id
+}
