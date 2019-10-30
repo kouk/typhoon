@@ -31,6 +31,11 @@ output "worker_security_groups" {
   description = "List of worker security group IDs"
 }
 
+output "controller_security_groups" {
+  value       = [aws_security_group.controller.id]
+  description = "List of controller security group IDs"
+}
+
 output "kubeconfig" {
   value = module.bootstrap.kubeconfig-kubelet
 }
